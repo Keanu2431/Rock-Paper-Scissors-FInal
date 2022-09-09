@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="intro" class="">
+      <h1>
+        Welcome, How Many Rounds Would You Like To Play Of Rock Paper Scissors?
+      </h1>
+      <div id="best-of" class="choices">
+        <button class="button" id="two">2 out of 3</button>
+        <button class="button" id="three">3 out of 5</button>
+        <button class="button" id="five">5 out of 9</button>
+      </div>
+    </div>
+    <div id="main" class="hidden">
+      <section class="header">
+        <button id="rules">Rules</button>
+        <button id="restart" class="button">Restart</button>
+      </section>
+      <!-- <div class="move-up"> -->
+      <h1 class="title">Rock Paper Scissors</h1>
+
+      <div class="players">
+        <div id="left"><h2 id="player-name">Player</h2></div>
+        <div id="right"><h2 id="computer">Computer</h2></div>
+      </div>
+      <img
+        src="rps1computer.png"
+        alt=""
+        id="player--1-side"
+        class="smaller-img hidden shoot"
+      />
+      <img
+        class="smaller-img hidden shoot"
+        src="rps2player.png"
+        id="player--0-side"
+      />
+      <div class="image-holder">
+        <img
+          src="rock paper scissors.png"
+          alt="Rock Paper Scissors Image"
+          srcset=""
+          class="starter-image"
+        />
+      </div>
+      <div class="holders">
+        <div class="score-holder" data-player="0">
+          <h2>Score</h2>
+          <h3 id="player--0">0</h3>
+        </div>
+        <div id="test-container">
+          <div class="selection">
+            <button class="button" id="rock">Rock</button>
+            <button class="button" id="paper">Paper</button>
+            <button class="button" id="scissors">Scissors</button>
+          </div>
+          <div id="point-container">
+            <h1 id="draw" class="hidden">It's A Draw</h1>
+            <h1 id="point-player" class="hidden">Point To Player</h1>
+            <h1 id="point" class="hidden">Point To Computer</h1>
+            <h1 id="win" class="hidden">You've Won</h1>
+          </div>
+        </div>
+        <div class="score-holder" data-player="1">
+          <h2>Score</h2>
+          <h3 id="player--1">0</h3>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <h2 id="promo" class="hidden">
+        Enjoyed The Game? Check Out My
+        <a href="https://lumpkinstudios.com/" target="_blank">Portfolio</a>
+      </h2>
+    </div>
+    <div id="blur" class="overlay hidden"></div>
+    <div id="rules-text" class="modal hidden">
+      <button id="closeout" class="button">✖</button>
+
+      <h3 id="txt">
+        You Will Be Facing Off against the computer, and which ever of you to
+        reach the amount of points needed (based on the amount of rounds you
+        picked) will be deemed the winner.
+        <br />
+        Rock Beats Scissors <br />
+        Paper Beats rock <br />
+        scissors beats paper <br />
+        have fun, ~Keanu lumpkin
+      </h3>
+    </div>
+  </body>
+</html>
